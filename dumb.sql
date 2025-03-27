@@ -1,0 +1,15 @@
+CREATE DATABASE bot;
+
+USE bot;
+
+CREATE TABLE pessoas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    camisa VARCHAR(3) NOT NULL
+);
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+FLUSH PRIVILEGES;
+
+SELECT * FROM pessoas;
